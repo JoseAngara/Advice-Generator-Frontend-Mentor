@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+* {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.advice {
+    &__id {
+        color: $secondaryColor;
+        font-size: 0.45em;
+        letter-spacing: 4px;
+        text-align: center;
+        width: 100%;
+
+        & span {
+            font-size: inherit;
+        }
+    }
+
+    &__content {
+        color: $mainColor;
+        text-align: center;
+        margin: 10px 0;
+        margin-bottom: 0;
+
+        &::before {
+            content: '\201C';
+            font-family: "Times New Roman", sans-serif;
+            margin-right: 2px;
+        }
+
+        &::after {
+            content: '\201D';
+            font-family: "Times New Roman", sans-serif;
+            margin-left: 2px;
+        }
+    }
+}
